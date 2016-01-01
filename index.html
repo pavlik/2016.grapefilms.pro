@@ -3,25 +3,28 @@
     <head>
         <meta name="description" content="HappyNewYear">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>GrapeFilms 2016</title>
     </head>
-    <body style="background-image: url(img/bg_clr.png); background-repeat: repeat-x; background-position: 0 0; margin: 0; font-family: 'DroidSerifRegular', serif; min-height: 424px;">
+    <body style="background-image: url(img/bg_clr.png); background-repeat: repeat-x; background-position: 0 0; background-size: 100% 100%; margin: 0; font-family: 'DroidSerifRegular', serif; min-height: 424px; overflow-x: hidden;">
         <center>
             <div class="content_holder">
                 <p class="headname">Дорогие друзья!</p>
                 <p class="basetext">Наш коллектив Grapefilms production спешит поздравить Вас с наступающим 2016 годом. В наступающем году мы желаем Вам много интересных проектов и их успешной реализации, довольных клиентов и высоких продаж, роста и развития бизнеса. Пусть Ваша профессиональная и личная жизнь будет полна гармонии и счастья! Поздравляем!</p>
                 <p class="presenttext">В честь Нового года мы дарим вам подарок <b>10%</b> скидку на наши услуги</p>
-                <form style="max-width: 400px; margin-bottom: 65px;">
+                <form>
                     <input class="nameinput" type="text" size="17" name="name" placeholder="Ваше имя">
                     <input class="mailinput" type="text" size="17" name="email" placeholder="Ваш e-mail">
                     <button class="subbutton" type="submit">Получить подарок</button>
                 </form>
-                <a class="linktosite" href="http://www.grapefilms.pro">www.grapefilms.pro</a>
+                <a class="linktosite" href="//www.grapefilms.pro">www.grapefilms.pro</a>
             </div>
             <img class="img_lvl1" src="img/lvl1.png">
+            <img class="img_lvl2-1" src="img/lvl2.png">
+            <img class="img_lvl2-2" src="img/lvl2.png">
         </center>
     </body>
-    
+       
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (d, w, c) {
@@ -99,6 +102,10 @@
                 margin-top: 550px;
                 margin-bottom: 30px;
             }
+            form {
+                max-width: 400px;
+                margin-bottom: 65px;
+            }
             input.nameinput {
                 position: relative;
                 z-index: 99;
@@ -155,6 +162,18 @@
                 max-width: 960px;
                 top: 0;
             }
+            img.img_lvl2-1 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                left: -200px;
+            }
+            img.img_lvl2-2 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                right: -250px;
+            }
         }
         /*mobile*/
         @media screen and (min-width: 320px) and (max-width: 799px){
@@ -193,6 +212,7 @@
                 border-bottom: 2px solid rgba(255,255,255,0.5);
                 color: #ffffff;
                 margin-right: 15px;
+                margin-bottom: 15px;
                 font-size: 12pt;
                 padding-left: 5px;
                 font-family: 'DroidSerifRegular', serif;
@@ -240,14 +260,80 @@
                 max-width: 660px;
                 top: 0;
             }
+            img.img_lvl2-1 {
+                display: none;
+            }
+             img.img_lvl2-2 {
+                display: none;
+            }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         /*centring image*/
-        @media screen and (min-width: 424px) and (max-width: 479px){
+        @media screen and (min-width: 320px) and (max-width: 479px){
+            div.content_holder {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 295px;
+            }
+            p.headname {
+                max-width: 300px;
+                color: #ffffff;
+                font-size: 10pt;
+            }
+            p.basetext {
+                max-width: 300px;
+                color: #ffffff;
+                font-size: 9pt;
+                line-height: 12pt;
+                text-align: center;
+            }
+            p.presenttext {
+                max-width: 300px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 470px;
+                margin-bottom: 30px;
+            }
+            form {
+                max-width: 400px;
+                margin-bottom: 20px;
+            }
+            input.nameinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                margin-right: 0;
+                margin-bottom: 15px;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
             img.img_lvl1 {
                 position: relative;
-                max-width: 660px;
+                max-width: 640px;
                 top: 0;
-                left: -130px;
+                left: -160px;
             }
         }
         @media screen and (min-width: 480px) and (max-width: 599px){
@@ -264,6 +350,42 @@
                 max-width: 660px;
                 top: 0;
                 left: -40px;
+            }
+        }
+        @media screen and (min-width: 1100px) and (max-width: 1280px){
+            img.img_lvl2-1 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                left: -400px;
+            }
+            img.img_lvl2-2 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                right: -450px;
+            }
+        }
+        @media screen and (min-width: 800px) and (max-width: 1099px){
+            img.img_lvl2-1 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                left: -500px;
+            }
+            img.img_lvl2-2 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                right: -550px;
+            }
+        }
+        @media screen and (max-width: 799px){
+            img.img_lvl2-1 {
+                display: none;
+            }
+             img.img_lvl2-2 {
+                display: none;
             }
         }
     </style>
