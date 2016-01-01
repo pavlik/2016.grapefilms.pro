@@ -19,40 +19,12 @@
                 </form>
                 <a class="linktosite" href="//www.grapefilms.pro">www.grapefilms.pro</a>
             </div>
-            <img class="img_lvl1" src="img/lvl1.png">
+            <img class="img_lvl1-1 img_lvl1" src="img/lvl1-1.png">
+            <img class="img_lvl1-2 img_lvl1" src="img/lvl1-2.png">
             <img class="img_lvl2-1" src="img/lvl2.png">
             <img class="img_lvl2-2" src="img/lvl2.png">
         </center>
     </body>
-       
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter34491105 = new Ya.Metrika({
-                    id:34491105,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/34491105" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
     <style type="text/css">
         /* font-family: "DroidSerifRegular"; */
         @font-face {
@@ -74,13 +46,15 @@
             font-style: normal;
             font-weight: normal;
         }
-        /*pc*/
-        @media screen and (min-width: 800px){
+
+        /*pc 1600 - 1920*/
+        @media screen and (min-width: 1280px) and (max-width: 1920px){
             div.content_holder {
                 position: absolute;
                 left: 0;
                 right: 0;
                 top: 355px;
+                z-index: 200;
             }
             p.headname {
                 max-width: 445px;
@@ -158,6 +132,14 @@
                 text-decoration: none;
             }
             img.img_lvl1 {
+                display: block;
+            }
+            img.img_lvl1-1 {
+                position: relative;
+                max-width: 960px;
+                top: 0;
+            }
+            img.img_lvl1-2 {
                 position: relative;
                 max-width: 960px;
                 top: 0;
@@ -175,24 +157,26 @@
                 right: -250px;
             }
         }
-        /*mobile*/
-        @media screen and (min-width: 320px) and (max-width: 799px){
+        
+        /*pc 1280 - 1595*/
+        @media screen and (min-width: 1280px) and (max-width: 1595px){
             div.content_holder {
                 position: absolute;
                 left: 0;
                 right: 0;
-                top: 305px;
+                top: 355px;
+                z-index: 200;
             }
             p.headname {
                 max-width: 445px;
                 color: #ffffff;
-                font-size: 12pt;
+                font-size: 14pt;
             }
             p.basetext {
-                max-width: 395px;
+                max-width: 445px;
                 color: #ffffff;
-                font-size: 10pt;
-                line-height: 13pt;
+                font-size: 11pt;
+                line-height: 15pt;
                 text-align: center;
             }
             p.presenttext {
@@ -200,8 +184,12 @@
                 color: #ffffff;
                 font-size: 11pt;
                 line-height: 15pt;
-                margin-top: 470px;
+                margin-top: 550px;
                 margin-bottom: 30px;
+            }
+            form {
+                max-width: 400px;
+                margin-bottom: 65px;
             }
             input.nameinput {
                 position: relative;
@@ -212,7 +200,6 @@
                 border-bottom: 2px solid rgba(255,255,255,0.5);
                 color: #ffffff;
                 margin-right: 15px;
-                margin-bottom: 15px;
                 font-size: 12pt;
                 padding-left: 5px;
                 font-family: 'DroidSerifRegular', serif;
@@ -245,7 +232,7 @@
                 padding-left: 15px;
                 padding-right: 15px;
             }
-             a.linktosite {
+            a.linktosite {
                 position: relative;
                 z-index: 101;max-width: 445px;
                 color: #ffffff;
@@ -256,64 +243,63 @@
                 text-decoration: none;
             }
             img.img_lvl1 {
+                display: block;
+            }
+            img.img_lvl1-1 {
                 position: relative;
-                max-width: 660px;
+                max-width: 960px;
+                top: 0;
+            }
+            img.img_lvl1-2 {
+                position: relative;
+                max-width: 960px;
                 top: 0;
             }
             img.img_lvl2-1 {
-                display: none;
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                left: -450px;
             }
-             img.img_lvl2-2 {
-                display: none;
+            img.img_lvl2-2 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                right: -450px;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*centring image*/
-        @media screen and (min-width: 320px) and (max-width: 479px){
+        /*pc 1024 - 1279*/
+        @media screen and (min-width: 1024px) and (max-width: 1279px){
             div.content_holder {
                 position: absolute;
                 left: 0;
                 right: 0;
-                top: 295px;
+                top: 355px;
+                z-index: 200;
             }
             p.headname {
-                max-width: 300px;
+                max-width: 445px;
                 color: #ffffff;
-                font-size: 10pt;
+                font-size: 14pt;
             }
             p.basetext {
-                max-width: 300px;
-                color: #ffffff;
-                font-size: 9pt;
-                line-height: 12pt;
-                text-align: center;
-            }
-            p.presenttext {
-                max-width: 300px;
+                max-width: 445px;
                 color: #ffffff;
                 font-size: 11pt;
                 line-height: 15pt;
-                margin-top: 470px;
+                text-align: center;
+            }
+            p.presenttext {
+                max-width: 355px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 550px;
                 margin-bottom: 30px;
             }
             form {
                 max-width: 400px;
-                margin-bottom: 20px;
+                margin-bottom: 65px;
             }
             input.nameinput {
                 position: relative;
@@ -323,68 +309,610 @@
                 border: 0;
                 border-bottom: 2px solid rgba(255,255,255,0.5);
                 color: #ffffff;
-                margin-right: 0;
-                margin-bottom: 15px;
+                margin-right: 15px;
                 font-size: 12pt;
                 padding-left: 5px;
                 font-family: 'DroidSerifRegular', serif;
             }
-            img.img_lvl1 {
+            input.mailinput {
                 position: relative;
-                max-width: 640px;
-                top: 0;
-                left: -160px;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
             }
-        }
-        @media screen and (min-width: 480px) and (max-width: 599px){
-            img.img_lvl1 {
+            button.subbutton {
                 position: relative;
-                max-width: 660px;
-                top: 0;
-                left: -100px;
+                z-index: 100;
+                margin-top: 20px;
+                height: 30px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: rgb(231,100,34);
+                border: 0;
+                color: #ffffff;
+                font-size: 10pt;
+                font-family: 'DroidSerifRegular', serif;
+                text-shadow: 1px 1px 1px #000000;
+                padding-left: 15px;
+                padding-right: 15px;
             }
-        }
-        @media screen and (min-width: 600px) and (max-width: 677px){
-            img.img_lvl1 {
+            a.linktosite {
                 position: relative;
-                max-width: 660px;
-                top: 0;
-                left: -40px;
+                z-index: 101;max-width: 445px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 70px;
+                cursor: pointer;
+                text-decoration: none;
             }
-        }
-        @media screen and (min-width: 1100px) and (max-width: 1280px){
+            img.img_lvl1 {
+                display: block;
+            }
+            img.img_lvl1-1 {
+                position: relative;
+                max-width: 960px;
+                top: 0;
+            }
+            img.img_lvl1-2 {
+                position: relative;
+                max-width: 960px;
+                top: 0;
+            }
             img.img_lvl2-1 {
                 position: absolute;
                 max-width: 1100px;
                 top: 0;
-                left: -400px;
+                left: -570px;
             }
             img.img_lvl2-2 {
                 position: absolute;
                 max-width: 1100px;
                 top: 0;
-                right: -450px;
+                right: -570px;
             }
         }
-        @media screen and (min-width: 800px) and (max-width: 1099px){
+        /*pc 800 - 1023*/
+        @media screen and (min-width: 800px) and (max-width: 1023px){
+            div.content_holder {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 355px;
+                z-index: 200;
+            }
+            p.headname {
+                max-width: 445px;
+                color: #ffffff;
+                font-size: 14pt;
+            }
+            p.basetext {
+                max-width: 445px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                text-align: center;
+            }
+            p.presenttext {
+                max-width: 355px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 550px;
+                margin-bottom: 30px;
+            }
+            form {
+                max-width: 400px;
+                margin-bottom: 65px;
+            }
+            input.nameinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                margin-right: 15px;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            input.mailinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            button.subbutton {
+                position: relative;
+                z-index: 100;
+                margin-top: 20px;
+                height: 30px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: rgb(231,100,34);
+                border: 0;
+                color: #ffffff;
+                font-size: 10pt;
+                font-family: 'DroidSerifRegular', serif;
+                text-shadow: 1px 1px 1px #000000;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            a.linktosite {
+                position: relative;
+                z-index: 101;max-width: 445px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 70px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            img.img_lvl1 {
+                display: block;
+            }
+            img.img_lvl1-1 {
+                position: relative;
+                max-width: 960px;
+                top: 0;
+            }
+            img.img_lvl1-2 {
+                position: relative;
+                max-width: 960px;
+                top: 0;
+            }
             img.img_lvl2-1 {
                 position: absolute;
                 max-width: 1100px;
                 top: 0;
-                left: -500px;
+                left: -680px;
             }
             img.img_lvl2-2 {
                 position: absolute;
                 max-width: 1100px;
                 top: 0;
-                right: -550px;
+                right: -680px;
             }
         }
-        @media screen and (max-width: 799px){
+        /*ipad 768 - 799*/
+        @media screen and (min-width: 768px) and (max-width: 799px){
+            div.content_holder {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 355px;
+                z-index: 200;
+            }
+            p.headname {
+                max-width: 445px;
+                color: #ffffff;
+                font-size: 14pt;
+            }
+            p.basetext {
+                max-width: 445px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                text-align: center;
+            }
+            p.presenttext {
+                max-width: 355px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 550px;
+                margin-bottom: 30px;
+            }
+            form {
+                max-width: 400px;
+                margin-bottom: 65px;
+            }
+            input.nameinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                margin-right: 15px;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            input.mailinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            button.subbutton {
+                position: relative;
+                z-index: 100;
+                margin-top: 20px;
+                height: 30px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: rgb(231,100,34);
+                border: 0;
+                color: #ffffff;
+                font-size: 10pt;
+                font-family: 'DroidSerifRegular', serif;
+                text-shadow: 1px 1px 1px #000000;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            a.linktosite {
+                position: relative;
+                z-index: 101;max-width: 445px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 70px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            img.img_lvl1 {
+                display: block;
+            }
+            img.img_lvl1-1 {
+                position: relative;
+                max-width: 960px;
+                top: 0;
+            }
+            img.img_lvl1-2 {
+                position: relative;
+                max-width: 960px;
+                top: 0;
+            }
+            img.img_lvl2-1 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                left: -680px;
+            }
+            img.img_lvl2-2 {
+                position: absolute;
+                max-width: 1100px;
+                top: 0;
+                right: -680px;
+            }
+        }
+        /*ihone 6+ 414 - 767*/
+        @media screen and (min-width: 414px) and (max-width: 767px){
+            div.content_holder {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 355px;
+                z-index: 200;
+            }
+            p.headname {
+                max-width: 445px;
+                color: #ffffff;
+                font-size: 14pt;
+            }
+            p.basetext {
+                max-width: 400px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                text-align: center;
+            }
+            p.presenttext {
+                max-width: 355px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 550px;
+                margin-bottom: 30px;
+            }
+            form {
+                max-width: 300px;
+                margin-bottom: 45px;
+            }
+            input.nameinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                margin-bottom: 20px;
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            input.mailinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                margin-bottom: 20px;
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            button.subbutton {
+                position: relative;
+                z-index: 100;
+                margin-top: 20px;
+                height: 30px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: rgb(231,100,34);
+                border: 0;
+                color: #ffffff;
+                font-size: 10pt;
+                font-family: 'DroidSerifRegular', serif;
+                text-shadow: 1px 1px 1px #000000;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            a.linktosite {
+                position: relative;
+                z-index: 101;max-width: 445px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            img.img_lvl1 {
+                display: block;
+            }
+            img.img_lvl1-1 {
+                position: relative;
+                max-width: 800px;
+                top: 0;
+                left: -175px;
+            }
+            img.img_lvl1-2 {
+                position: relative;
+                max-width: 800px;
+                top: 20px;
+                left: -175px;
+            }
             img.img_lvl2-1 {
                 display: none;
             }
-             img.img_lvl2-2 {
+            img.img_lvl2-2 {
+                display: none;
+            }
+        }
+        /*iphone 6 375 - 413*/
+        @media screen and (min-width: 375px) and (max-width: 413px){
+            div.content_holder {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 355px;
+                z-index: 200;
+            }
+            p.headname {
+                max-width: 445px;
+                color: #ffffff;
+                font-size: 14pt;
+            }
+            p.basetext {
+                max-width: 305px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                text-align: center;
+            }
+            p.presenttext {
+                max-width: 355px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 550px;
+                margin-bottom: 30px;
+            }
+            form {
+                max-width: 300px;
+                margin-bottom: 45px;
+            }
+            input.nameinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                margin-bottom: 20px;
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            input.mailinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                margin-bottom: 20px;
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            button.subbutton {
+                position: relative;
+                z-index: 100;
+                margin-top: 20px;
+                height: 30px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: rgb(231,100,34);
+                border: 0;
+                color: #ffffff;
+                font-size: 10pt;
+                font-family: 'DroidSerifRegular', serif;
+                text-shadow: 1px 1px 1px #000000;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            a.linktosite {
+                position: relative;
+                z-index: 101;max-width: 445px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            img.img_lvl1 {
+                display: block;
+            }
+            img.img_lvl1-1 {
+                position: relative;
+                max-width: 800px;
+                top: 0;
+                left: -195px;
+            }
+            img.img_lvl1-2 {
+                position: relative;
+                max-width: 800px;
+                top: 60px;
+                left: -195px;
+            }
+            img.img_lvl2-1 {
+                display: none;
+            }
+            img.img_lvl2-2 {
+                display: none;
+            }
+        }
+        /*iphone 4, 5, 5s 320 - 374*/
+        @media screen and (min-width: 320px) and (max-width: 374px){
+            div.content_holder {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 355px;
+                z-index: 200;
+            }
+            p.headname {
+                max-width: 445px;
+                color: #ffffff;
+                font-size: 14pt;
+            }
+            p.basetext {
+                max-width: 295px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 16pt;
+                text-align: center;
+            }
+            p.presenttext {
+                max-width: 355px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                margin-top: 550px;
+                margin-bottom: 30px;
+            }
+            form {
+                max-width: 300px;
+                margin-bottom: 45px;
+            }
+            input.nameinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                margin-bottom: 20px;
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            input.mailinput {
+                position: relative;
+                z-index: 99;
+                height: 20px;
+                background: rgba(0,0,0,0);
+                margin-bottom: 20px;
+                border: 0;
+                border-bottom: 2px solid rgba(255,255,255,0.5);
+                color: #ffffff;
+                font-size: 12pt;
+                padding-left: 5px;
+                font-family: 'DroidSerifRegular', serif;
+            }
+            button.subbutton {
+                position: relative;
+                z-index: 100;
+                margin-top: 20px;
+                height: 30px;
+                border-radius: 5px;
+                cursor: pointer;
+                background: rgb(231,100,34);
+                border: 0;
+                color: #ffffff;
+                font-size: 10pt;
+                font-family: 'DroidSerifRegular', serif;
+                text-shadow: 1px 1px 1px #000000;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            a.linktosite {
+                position: relative;
+                z-index: 101;max-width: 445px;
+                color: #ffffff;
+                font-size: 11pt;
+                line-height: 15pt;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            img.img_lvl1 {
+                display: block;
+            }
+            img.img_lvl1-1 {
+                position: relative;
+                max-width: 800px;
+                top: 0;
+                left: -220px;
+            }
+            img.img_lvl1-2 {
+                position: relative;
+                max-width: 800px;
+                top: 90px;
+                left: -220px;
+            }
+            img.img_lvl2-1 {
+                display: none;
+            }
+            img.img_lvl2-2 {
                 display: none;
             }
         }
